@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+//container放這裡嗎?
+.container{
+    max-width: 1230px;
+    margin: auto 0;
+    padding: 0 15px;
+}
+

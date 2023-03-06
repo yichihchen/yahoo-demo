@@ -1,0 +1,28 @@
+.logo{
+    a{
+        background-image: url(/assets/images/yahoo-logo.png);
+        display: block;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 125px;
+        height: 55px;
+    }
+} 
+
+.header-right{
+    .input-group{
+        display: flex;
+    }
+    .form-control{
+        height: 50px;
+        width: 40%;   //有沒有更好的方法?
+    }
+    .header-button{
+        width: 8%;    //縮小字會破版
+        background-color:$dory;
+    }
+
+}
