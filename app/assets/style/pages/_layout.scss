@@ -1,28 +1,85 @@
-.logo{
-    a{
+
+.logo {
+    a {
         background-image: url(/assets/images/yahoo-logo.png);
         display: block;
         background-repeat: no-repeat;
-        background-size: cover; 
+        background-size: cover;
         text-indent: 101%;
         white-space: nowrap;
         overflow: hidden;
         width: 125px;
         height: 55px;
     }
-} 
+}
 
-.header-right{
-    .input-group{
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    
+    .input-group {
         display: flex;
-    }
-    .form-control{
-        height: 50px;
-        width: 40%;   //有沒有更好的方法?
-    }
-    .header-button{
-        width: 8%;    //縮小字會破版
-        background-color:$dory;
+
+        .input-outside {
+            position: relative; //麥克風position父層
+        }
+
+        .micro-icon {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            right: 1%;
+        }
     }
 
+    .form-control {
+        height: 50px;
+        width: 532px; //有沒有更好的方法?
+        position: relative;
+        outline: none; //避免框點下去出現黑外框
+        border-radius: 4px 0xp 0px 4px;
+    }
+
+    .header-button {
+        width: 73px; //縮小字會破版50
+        height: 50px;
+        background-color: $dory;
+        border: none;
+        border-radius: 0px 4px 4px 0px;
+        cursor: pointer;
+    }
+
+}
+
+.header-list {
+    .moon-icon {
+        @include iconpoint() {
+            transform: rotateY(180deg) rotate(45deg); //水平翻轉 再囀45度
+        }
+    }
+
+    .header-menu {
+        display: flex;
+
+        li {
+            padding-right: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        li:nth-last-child(1) {
+            padding-right: 0px;
+        }
+    }
+
+    .header-login {
+        width: 82px;
+        height: 27px;
+        display: block;
+        border: 2px solid $grape-jelly;
+        border-radius: 4px;
+        color:$grape-jelly;
+        padding: 3px 6px;
+        text-align: center;
+    }
 }
