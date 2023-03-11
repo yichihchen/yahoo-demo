@@ -193,6 +193,11 @@ a {
     .keywords .key-list a {
       color: #324fe1; }
 
+.section-middle .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .sidebar {
   width: 13%;
   display: -webkit-box;
@@ -208,7 +213,7 @@ a {
     width: 50%; }
 
 .concern {
-  width: 55%;
+  width: 100%;
   height: 48px;
   background-color: #ff6e0c;
   border-radius: 5px;
@@ -235,11 +240,13 @@ a {
   display: flex; }
 
 .panels-shifts {
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 55%;
-  padding: 14px; }
+  padding: 14px;
+  display: none; }
 
 .panel-pictures {
   margin-right: 14px; }
@@ -266,5 +273,15 @@ a {
 
 .panels-content {
   width: 40%; }
+
+.aside-sticky {
+  width: 25%;
+  height: 272px;
+  color: #324fe1;
+  font-size: 24px; }
+  .aside-sticky .retina {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%; }
 
 /*# sourceMappingURL=all.css.map */
