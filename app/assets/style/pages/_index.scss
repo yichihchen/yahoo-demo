@@ -1,3 +1,9 @@
+//section-right container
+.section-middle{
+.container{
+    display: flex;
+}
+}
 //sidebar
 .sidebar {
     width: 13%;
@@ -22,7 +28,7 @@
 
 //concern
 .concern {
-    width: 55%; //父層main的55%
+    width: 100%; //父層main的55%
     height: 48px;
     background-color: $heetos;
     border-radius: 5px;
@@ -57,9 +63,11 @@
 
 //不同的penals-tabs標籤
 .panels-shifts {
+    display: block;
     display: flex;
     width: 55%; //父層main的55%
     padding: 14px;
+    display: none;          //所有tabs先預設隱藏
 
 }
 
@@ -95,4 +103,17 @@
 
 .panels-content {
     width: 40%;
+}
+
+//aside-sticky
+.aside-sticky{
+    width: 25%; //父層main的25%
+    height: 272px;
+    color:$keywords;
+    font-size: 24px;
+    .retina{
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+    }
 }
