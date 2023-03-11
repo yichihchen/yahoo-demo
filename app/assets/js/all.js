@@ -1,5 +1,4 @@
-console.log('Hello!');
-
-$(document).ready(() => {
-  console.log('HesSchool Hello!');
-});
+function openTabs(event, tabsType){
+  //讓所有tabs內容先消失
+  
+}

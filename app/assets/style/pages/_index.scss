@@ -1,0 +1,98 @@
+//sidebar
+.sidebar {
+    width: 13%;
+    display: flex;
+
+    li {
+        padding: 8px 0px;
+
+        a {
+            color: $keywords;
+        }
+    }
+
+    .sidebar-left {
+        width: 50%;
+    }
+
+    .sidebar-right {
+        width: 50%;
+    }
+}
+
+//concern
+.concern {
+    width: 55%; //父層main的55%
+    height: 48px;
+    background-color: $heetos;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 18px 16px;
+    position: relative;
+
+    a {
+        color: white;
+        font-weight: normal;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .baseball-concern {
+        width: 73px;
+        height: 37px;
+        border-radius: 5px;
+        position: absolute;
+        top: 12%;
+        right: 1%;
+    }
+}
+
+//tabs-section
+.tabs-list {
+    display: flex;
+}
+
+//不同的penals-tabs標籤
+.panels-shifts {
+    display: flex;
+    width: 55%; //父層main的55%
+    padding: 14px;
+
+}
+
+//共同panels-tabs標籤
+.panel-pictures {
+    margin-right: 14px;
+}
+
+.panels-focus-picture1 {
+    padding-bottom: 4px;
+
+    img {
+        //panels-focus flex後img被擠壓
+        width: 100%;
+        height: 206px;
+        object-fit: cover;
+    }
+}
+
+.panel-focus-picture2 {
+    display: flex;
+
+    li:nth-child(1) {
+        padding-right: 2px;
+    }
+
+    img {
+        width: 100%;
+        height: 102px;
+        object-fit: cover;
+    }
+}
+
+.panels-content {
+    width: 40%;
+}

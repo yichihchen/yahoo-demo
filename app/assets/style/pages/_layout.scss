@@ -14,6 +14,7 @@
         width: 125px;
         height: 55px;
     }
+
 }
 
 .header-right {
@@ -22,7 +23,6 @@
 
     .input-group {
         display: flex;
-
         .input-outside {
             position: relative; //麥克風position父層
         }
@@ -41,6 +41,7 @@
         position: relative;
         outline: none; //避免框點下去出現黑外框
         border-radius: 4px 0xp 0px 4px;
+        font-size: 18px;
     }
 
     .header-button {
@@ -139,7 +140,7 @@
             padding: 0px 10px;
             border-right: 1px solid $bob;
 
-            &:nth-child(2) {
+            &:nth-child(2) {                //請搞清楚child
                 padding: 0px 10px 0px 0px;
             }
         }
