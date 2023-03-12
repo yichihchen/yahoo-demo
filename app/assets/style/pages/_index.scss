@@ -1,12 +1,13 @@
 //section-right container
-.section-middle{
-.container{
-    display: flex;
+.section-middle {
+    .container {
+        display: flex;
+    }
 }
-}
+
 //sidebar
 .sidebar {
-    width: 13%;
+    width: 20%; //這最左邊寬度怪怪的
     display: flex;
 
     li {
@@ -56,38 +57,71 @@
     }
 }
 
+//main
+.main {
+    margin: 10px;
+}
+
 //tabs-section
+
 .tabs-list {
     display: flex;
+    height: 40px;
+
+    li {
+        flex-shrink: 0;
+        width: calc(100% / 5);  //讓tabs 5個按鈕 平均分配在tabs-list上
+    }
+
+    a {
+        display: block;
+        height: 100%;
+        padding: 12px 0px;
+        text-align: center;
+        border-top: 3px solid transparent;
+        background-color: $marshmallow;
+        color: black;
+
+        &:hover {
+            border-top: 3px solid $grape-jelly;
+            background-color: white;
+            color: $grape-jelly;
+            font-weight: bold;
+        }
+    }
 }
 
 //不同的penals-tabs標籤
+.experience {
+    display: flex; //再另外設定一層div放display:flex 避免設在.panels-shifts內 和display:none衝突失去效果
+}
+
 .panels-shifts {
-    display: block;
-    display: flex;
-    width: 55%; //父層main的55%
     padding: 14px;
-    display: none;          //所有tabs先預設隱藏
+    display: none; //所有tabs先預設隱藏
+
 
 }
 
 //共同panels-tabs標籤
 .panel-pictures {
     margin-right: 14px;
+    flex-shrink: 0; //防止img被擠壓，下在外層div才有用??
+    //應該是div剛好在experience下一層，所以被擠壓的是div,img是因為div被擠壓了所以才變小
 }
 
-.panels-focus-picture1 {
+.panels-picture1 {
     padding-bottom: 4px;
 
     img {
-        //panels-focus flex後img被擠壓
         width: 100%;
         height: 206px;
         object-fit: cover;
+
     }
 }
 
-.panel-focus-picture2 {
+.panel-picture2 {
     display: flex;
 
     li:nth-child(1) {
@@ -101,19 +135,22 @@
     }
 }
 
-.panels-content {
-    width: 40%;
-}
-
 //aside-sticky
-.aside-sticky{
-    width: 25%; //父層main的25%
+.aside-sticky {
+    width: 35%; //父層main的35%  怪怪的????
     height: 272px;
-    color:$keywords;
-    font-size: 24px;
-    .retina{
+    color: $keywords;
+    font-size: 20px;
+
+    p {
+        display: flex;
+        align-items: center;
+    }
+
+    .retina {
         width: 36px;
         height: 36px;
         border-radius: 50%;
+        margin-right: 8px;
     }
 }
