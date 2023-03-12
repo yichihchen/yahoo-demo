@@ -64,6 +64,9 @@ a {
   margin: 0 auto;
   padding: 0 12px; }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans TC', 'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+
 .header {
   padding: 22px 0px 12px 0px; }
 
@@ -199,7 +202,7 @@ a {
   display: flex; }
 
 .sidebar {
-  width: 13%;
+  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -234,54 +237,82 @@ a {
     top: 12%;
     right: 1%; }
 
+.main {
+  margin: 10px; }
+
 .tabs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px; }
+  .tabs-list li {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: calc(100% / 5); }
+  .tabs-list a {
+    display: block;
+    height: 100%;
+    padding: 12px 0px;
+    text-align: center;
+    border-top: 3px solid transparent;
+    background-color: #f5f8fa;
+    color: black; }
+    .tabs-list a:hover {
+      border-top: 3px solid #6001d2;
+      background-color: white;
+      color: #6001d2;
+      font-weight: bold; }
+
+.experience {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .panels-shifts {
-  display: block;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 55%;
   padding: 14px;
   display: none; }
 
 .panel-pictures {
-  margin-right: 14px; }
+  margin-right: 14px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
 
-.panels-focus-picture1 {
+.panels-picture1 {
   padding-bottom: 4px; }
-  .panels-focus-picture1 img {
+  .panels-picture1 img {
     width: 100%;
     height: 206px;
     -o-object-fit: cover;
        object-fit: cover; }
 
-.panel-focus-picture2 {
+.panel-picture2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .panel-focus-picture2 li:nth-child(1) {
+  .panel-picture2 li:nth-child(1) {
     padding-right: 2px; }
-  .panel-focus-picture2 img {
+  .panel-picture2 img {
     width: 100%;
     height: 102px;
     -o-object-fit: cover;
        object-fit: cover; }
 
-.panels-content {
-  width: 40%; }
-
 .aside-sticky {
-  width: 25%;
+  width: 35%;
   height: 272px;
   color: #324fe1;
-  font-size: 24px; }
+  font-size: 20px; }
+  .aside-sticky p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .aside-sticky .retina {
     width: 36px;
     height: 36px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    margin-right: 8px; }
 
 /*# sourceMappingURL=all.css.map */

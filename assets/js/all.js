@@ -1,8 +1,9 @@
 "use strict";
 
-function openTabs(event, tabsType) {
-  var i, panelsShifts, tabsLinks; //讓所有tabs內容先消失
+var i, panelsShifts, tabsLinks;
 
+function openTabs(event, tabsType) {
+  //讓所有tabs內容先消失
   panelsShifts = document.getElementsByClassName("panels-shifts");
 
   for (i = 0; i < panelsShifts.length; i++) {
